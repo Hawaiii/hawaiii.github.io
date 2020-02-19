@@ -149,7 +149,7 @@ template {
   font-weight: 300;
 }
 html {
-  font-family: 'Microsoft Jhenghei', Lantinghei SC, 'lanting', PingFang SC, Seguo UI, Microsoft Yahei UI, Arial;
+  font-family: Microsoft Yahei UI, Arial;
 }
 html::-webkit-scrollbar {
   width: 8px;
