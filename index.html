@@ -37,7 +37,7 @@
                 In my spare time, I paint watercolors, animate illustrations, and think about creative uses of computational photography.
               </p>
               <p style="text-align:center">
-                <a href="mailto:huayi@cmu.com">Email</a> &nbsp/&nbsp
+                <a href="mailto:huayi@cmu.com">email</a> &nbsp/&nbsp
                 <a href="data/YiHua_CV_040122.pdf">CV</a> <!-- &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=uB5001AAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/hawaiii/">Github</a> &nbsp/&nbsp
@@ -55,13 +55,82 @@
               <heading>Research</heading>
               <p>
                 My primary research interest lies in computational photography.
+                During my Ph.D., I worked on camera designs that can significantly minimize their size and bulk -- cameras without lenses.
+                I developed both novel hardware and their reconstruction algorithms for lensless imagers.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-           <tr onmouseout="sweepcam_stop()" onmouseover="sweepcam_start()">
+          <tr onmouseout="acoustoptics_stop()" onmouseover="acoustoptics_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='acoustoptics_image'>
+                <img src='images/acoustoptics_far.jpg' width="160"></div>
+              <img src='images/acoustoptics_near.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function acoustoptics_start() {
+                document.getElementById('acoustoptics_image').style.opacity = "1";
+              }
+
+              function acoustoptics_stop() {
+                document.getElementById('acoustoptics_image').style.opacity = "0";
+              }
+              acoustoptics_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Computational Imaging using Ultrasonically-Sculpted Virtual Lenses</papertitle>
+              <br>
+              Hossein Baktash, Yash Belhe, <strong>Yi Hua</strong>, Matteo G. Scopelliti, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>, <a href="https://www.chamanzarlab.com">Maysam Chamanzar</a>
+              <br>
+              <em>under review</em>
+              <br>
+              <p> 
+
+                <!-- Ultrasonically-sculpted waveguides provide vital opportunities for in situ optical imaging in transparent and scattering media. The interference of ultrasonic waves can be designed to form a spatially-varying refractive index pattern in the target medium, acting as a virtual lens to guide and focus light. The images formed by such lenses are subject to a large amount of spatially-varying blur, which significantly reduces their contrast. To alleviate this issue, the images can be computationally deblurred post experiment to restore the image. 
+                First, we demonstrate a brute force deconvolution technique to deblur the relayed images. While effective, this method proves to be computationally intensive due to the spatially-varying blur kernel. The reconfigurability of ultrasonically sculpted waveguides can be leveraged to address this issue by measuring line integrals of the image at multiple angles to form the Radon image of the target, which can be deblurred very efficiently with a simple linear model. We validate this method using simulated and experimental results. The tantalizing notion of using the reconfigurable ultrasonically-sculpted waveguides as part of the imaging systems, demonstrated in this paper, opens new opportunities for hybrid physical-computational optical systems.  -->
+
+              </p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="fouriercam_stop()" onmouseover="fouriercam_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='fouriercam_image'>
+                <img src='images/FourierCam_far.jpg' width="160"></div>
+              <img src='images/FourierCam_near.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function fouriercam_start() {
+                document.getElementById('fouriercam_image').style.opacity = "1";
+              }
+
+              function fouriercam_stop() {
+                document.getElementById('fouriercam_image').style.opacity = "0";
+              }
+              fouriercam_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://imagesci.ece.cmu.edu/files/paper/2021/FourierLensless_ICCV21.pdf">
+                <papertitle>A Simple Framework for 3D Lensless Imaging with Programmable Masks</papertitle>
+              </a>
+              <br>
+              Yucheng Zheng, <strong>Yi Hua</strong>, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>, <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>
+              <br>
+              <em>ICCV, 2021</em>
+              <br>
+              <p> A fast reconstruction algorithm for 3D lensless imaging that utilizes structures in the frequency domain; as a result we can learn mask designs that optimize 3D lensless imaging. </p>
+            </td>
+          </tr>
+
+          
+
+           <tr onmouseout="sweepcam_stop()" onmouseover="sweepcam_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
                 <div class="two" id='sweepcam_image'><video  width="160"  muted autoplay loop>
@@ -98,250 +167,39 @@
             </td>
           </tr> 
 
-           <tr>
+ 
+
+          <tr onmouseout="orbcam_stop()" onmouseover="orbcam_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images-old/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
-            </td>
-            <td style="padding:20px;width="75%";valign="middle">
-              <a href="http://imagesci.ece.cmu.edu/files/paper/2021/FourierLensless_ICCV21.pdf">
-                <papertitle>A Simple Framework for 3D Lensless Imaging with Programmable Masks</papertitle>
-              </a>
-              <br>
-              Yucheng Zheng, <strong>Yi Hua</strong>, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>, <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>
-              <br>
-              <em>ICCV, 2021</em>
-              <br>
-              <p> A fast reconstruction algorithm for 3D lensless imaging that utilizes structures in the frequency domain; as a result we can learn mask designs that optimize 3D lensless imaging. </p>
-            </td>
-          </tr> 
+            <div class="one">
+                <div class="two" id='orbcam_image'>
+                <img src='images/OrbCam_after.jpg' width="160"></div>
+              <img src='images/OrbCam_before.jpg' width="160">
+            </div>
 
-
-
-          <!-- <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images-old/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images-old/nerf_supervision.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
+                <script type="text/javascript">
+                function orbcam_start() {
+                  document.getElementById('orbcam_image').style.opacity = "1";
                 }
 
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
+                function orbcam_stop() {
+                  document.getElementById('orbcam_image').style.opacity = "0";
                 }
-                nerfsuper_stop()
+                orbcam_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
-              </a>
+              <a href="data/orbcam.mp4"><papertitle>Lensless Imaging with Spherical Sensors</papertitle></a>
               <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+              <strong>Yi Hua</strong>, <a href="https://yongyizhao.com">Yongyi Zhao</a>, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>
               <br>
-              <em>ICRA</em>, 2022  
-              <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
               <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
             </td>
-          </tr> -->
-					
-         <!--  <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images-old/mip360_sat.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images-old/mip360_sat.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function mip360_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
-                }
+          </tr>
 
-                function mip360_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
-                }
-                mip360_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf360">
-                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://phogzone.com/">Peter Hedman</a>
-              <br>
-							<em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="http://jonbarron.info/mipnerf360">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
-              /
-              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
-              <p></p>
-              <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
-            </td>
-          </tr>  -->
+          </tbody></table>
 
-    <!-- <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images-old/refnerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images-old/refnerf.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function refnerf_start() {
-            document.getElementById('refnerf_image').style.opacity = "1";
-          }
-
-          function refnerf_stop() {
-            document.getElementById('refnerf_image').style.opacity = "0";
-          }
-          refnerf_stop()
-        </script>
-      </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dorverbin.github.io/refnerf/index.html">
-            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
-          </a>
-          <br>
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-          <a href="Todd Zickler">Todd Zickler</a>,
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-          <br>
-    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-          <br>
-          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
-    /
-          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
-    /
-          <a href="https://youtu.be/qrdRH9irAlk">video</a>
-          <p></p>
-          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
-        </td>
-      </tr> -->
-
-         <!--  <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images-old/rawnerf.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images-old/rawnerf.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function rawnerf_start() {
-                  document.getElementById('rawnerf_image').style.opacity = "1";
-                }
-
-                function rawnerf_stop() {
-                  document.getElementById('rawnerf_image').style.opacity = "0";
-                }
-                rawnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://bmild.github.io/rawnerf/index.html">
-                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw images-old</papertitle>
-              </a>
-              <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>, <br>
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-							<em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
-              <p></p>
-              <p>
-								Properly training NeRF on raw camera data-old enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
-            </td>
-          </tr>  -->
-					
-   
-         <!--  <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images-old/regnerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images-old/regnerf_before.jpeg' width="160">
-              </div>
-              <script type="text/javascript">
-                function regnerf_start() {
-                  document.getElementById('regnerf_image').style.opacity = "1";
-                }
-
-                function regnerf_stop() {
-                  document.getElementById('regnerf_image').style.opacity = "0";
-                }
-                regnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://m-niemeyer.github.io/regnerf/index.html">
-                <papertitle>RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs</papertitle>
-              </a>
-              <br>
-              <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <a href="https://msmsajjadi.github.io/">Mehdi S. M. Sajjadi</a>, 
-              <a href="http://www.cvlibs.net/">Andreas Geiger</a>,
-              <a href="http://www2.informatik.uni-freiburg.de/~radwann/">Noha Radwan</a>
-              <br>
-        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://m-niemeyer.github.io/regnerf/index.html">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2112.00724">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=QyyyvA4-Kwc">video</a>
-              <p></p>
-              <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images-old.</p>
-            </td>
-          </tr>  -->
-          
-
-        </tbody></table>
-
-				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
               <heading>Projects</heading>
@@ -349,9 +207,131 @@
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+
+
+          <tr onmouseout="trinocular_stop()" onmouseover="trinocular_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='trinocular_image'>
+                <img src='images/Trinocular_after.jpg' width="160"></div>
+              <img src='images/Trinocular_before.jpg' width="160">
+            </div>
+
+                <script type="text/javascript">
+                function trinocular_start() {
+                  document.getElementById('trinocular_image').style.opacity = "1";
+                }
+
+                function trinocular_stop() {
+                  document.getElementById('trinocular_image').style.opacity = "0";
+                }
+                trinocular_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Learning Cross-Modality Matching Function for Trinocular Stereo</papertitle></a>
+              <br>
+              in collaboration with Supreeth Achar
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr onmouseout="occulus_stop()" onmouseover="occulus_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='occlus_image'><video  width="160"  muted autoplay loop>
+                <source src="images/Occulus_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/Occulus_image.jpg' width="160">
+            </div>
+
+                <script type="text/javascript">
+                function occulus_start() {
+                  document.getElementById('occulus_image').style.opacity = "1";
+                }
+
+                function occulus_stop() {
+                  document.getElementById('occulus_image').style.opacity = "0";
+                }
+                occulus_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/imu_calibration.mp4"><papertitle>Automatic Calibration System for Occulus Virtual Reality Headset</papertitle></a>
+              <br>
+              in collaboration with Eric Huang, Dawei Wang, Michal Perdoch, Hernan Badino, Simon Lucey
+              <br>
+              <p>Automatic calibration system with robot arm for camera to IMU calibration & platform for comparing headset pose estimation from different sources </p>
+            </td>
+          </tr>
+
+
+          <!-- <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Peel_before.jpg" alt="peel" width="160" height="160">
+            </td> -->
+            <tr onmouseout="peel_stop()" onmouseover="peel_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+                <div class="two" id='peel_image'>
+                <img src='images/Peel_after.jpeg' width="160"></div>
+              <img src='images/Peel_before.jpeg' width="160">
+            </div>
+
+                <script type="text/javascript">
+                function peel_start() {
+                  document.getElementById('peel_image').style.opacity = "1";
+                }
+
+                function peel_stop() {
+                  document.getElementById('peel_image').style.opacity = "0";
+                }
+                peel_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width="75%";valign="middle">
+              <a href="https://devpost.com/software/peel">
+                <papertitle>Peel</papertitle>
+              </a>
+              <br>
+              in collaboration with Zhifan Li, Yoko Hongyu Li, <a href="https://ceciliavision.github.io">Cecilia Zhang</a>
+              <br>
+              Hack Rice, 2015 &nbsp <font color="red"><strong>People's Choice Award</strong></font>
+              <br>
+              <p> An app that let you ”peel” a color filter from any photo of your choice and apply it to your photo
+              </p>
+            </td>
+          </tr> 
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images-old/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
+            </td>
+            <td style="padding:20px;width="75%";valign="middle">
+              <a href="https://www.youtube.com/watch?v=ZXKyUi7liN8">
+                <papertitle>We Put Food On Your Plate</papertitle>
+              </a>
+              <br>
+              in collaboration with <a href="https://ceciliavision.github.io">Cecilia Zhang</a>
+              <br>
+              <p> An android app that augments empty plates with food. </p>
+            </td>
+          </tr> 
+
+          </tbody></table>
+				
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Art</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
 					
           <tr>
-            <
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images-old/cvf.jpg"></td>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images-old/cvf.jpg"></td>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images-old/cvf.jpg"></td>
