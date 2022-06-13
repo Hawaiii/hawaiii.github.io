@@ -26,15 +26,29 @@
                 <a href="https://hawaiiipaintspit.tumblr.com/">artist</a>
               </p>
               <p>
-                I am a PhD student at <a href="http://images-oldci.ece.cmu.edu">Image Science Lab</a> at Carnegie Mellon University, advised by Aswin Sankaranarayanan.
-                <!-- My research interest lies in computational photography and computer vision. -->
+                I am a PhD student at Carnegie Mellon University, advised by <a href="http://images-oldci.ece.cmu.edu" style="color: black">Aswin Sankaranarayanan</a>.
+                My research interests are
+                <ul>
+                  <li>computational photography & imaging</li>
+                  <!-- <li>novel camera designs</li> -->
+                  <li>physics-based differentiable rendering</li>
+                  <li>3D geometry and calibration </li>
+                  <li>adapting painting techniques to photography</li>
+                </ul>
+              </p>
+
+                <!-- My research interest lies in computational photography and computer vision. 
                 During my PhD, I build compact lensless imagers and design 3D reconstruction algorithms for them.
-              <!-- </p>
+              </p>
               <p>
                 I received my M.S. in Computer Vision from Carnegie Mellon University in 2016, and B.S. in Computer Science from Rice University in 2015. 
                 I interned at Google Daydream in 2018 and Apple Special Project Group in 2016.
-              </p> <p> -->
+              </p> <p>
                 In my spare time, I paint watercolors, animate illustrations, and think about creative uses of computational photography.
+              -->
+              <p>
+                Before Ph.D., I received my M.S. in Computer Vision from Carnegie Mellon University in 2016, and B.S. in Computer Science from Rice University in 2015. 
+                I interned at Google Daydream in 2018 and Apple Special Project Group in 2016.
               </p>
               <p style="text-align:center">
                 <a href="mailto:huayi@cmu.com">email</a> &nbsp/&nbsp
@@ -56,12 +70,43 @@
               <p>
                 My primary research interest lies in computational photography.
                 During my Ph.D., I worked on camera designs that can significantly minimize their size and bulk -- cameras without lenses.
-                I developed both novel hardware and their reconstruction algorithms for lensless imagers.
+                I developed both novel hardware and their reconstruction algorithms to enhance the speed and quality of 3D lensless imaging.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="zcam_stop()" onmouseover="zcam_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='zcam_image'>
+                <img src='images/zcam_after.jpg' width="160"></div>
+              <img src='images/zcam_before.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function zcam_start() {
+                document.getElementById('zcam_image').style.opacity = "1";
+              }
+
+              function zcam_stop() {
+                document.getElementById('zcam_image').style.opacity = "0";
+              }
+              zcam_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Lensfree Z-Stacking: A Theory of Volumetric Convolution for Lensless Cameras</papertitle>
+              <br>
+              <strong>Yi Hua</strong>, <a href="https://intra.ece.ucr.edu/~sasif/" style="color: black">M. Salman Asif</a>,  <a href="http://imagesci.ece.cmu.edu" style="color: black">Aswin C. Sankaranarayanan</a> 
+              <br>
+              <em>under review</em>
+              <br>
+              <p> 
+                A theoretical study that fully characterizes the achievable spatio-axial resolution from z-stacked measurements from a lensless camera.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="acoustoptics_stop()" onmouseover="acoustoptics_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -84,7 +129,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>Computational Imaging using Ultrasonically-Sculpted Virtual Lenses</papertitle>
               <br>
-              Hossein Baktash, Yash Belhe, <strong>Yi Hua</strong>, Matteo G. Scopelliti, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>, <a href="https://www.chamanzarlab.com">Maysam Chamanzar</a>
+              Hossein Baktash, Yash Belhe, <strong>Yi Hua</strong>, Matteo G. Scopelliti, <a href="http://imagesci.ece.cmu.edu" style="color: black">Aswin C. Sankaranarayanan</a>, <a href="https://www.chamanzarlab.com" style="color: black">Maysam Chamanzar</a>
               <br>
               <em>under review</em>
               <br>
@@ -120,7 +165,7 @@
                 <papertitle>A Simple Framework for 3D Lensless Imaging with Programmable Masks</papertitle>
               </a>
               <br>
-              Yucheng Zheng, <strong>Yi Hua</strong>, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>, <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>
+              Yucheng Zheng, <strong>Yi Hua</strong>, <a href="http://imagesci.ece.cmu.edu" style="color: black">Aswin C. Sankaranarayanan</a>, <a href="https://intra.ece.ucr.edu/~sasif/" style="color: black">M. Salman Asif</a>
               <br>
               <em>ICCV, 2021</em>
               <br>
@@ -156,7 +201,7 @@
                 <papertitle>SweepCam — Depth-aware Lensless Imaging using Programmable Masks</papertitle>
               </a>
               <br>
-              <strong>Yi Hua</strong>, Shigeki Nakamura, <a href="https://intra.ece.ucr.edu/~sasif/">M. Salman Asif</a>,  <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a> 
+              <strong>Yi Hua</strong>, Shigeki Nakamura, <a href="https://intra.ece.ucr.edu/~sasif/" style="color: black">M. Salman Asif</a>,  <a href="http://imagesci.ece.cmu.edu" style="color: black">Aswin C. Sankaranarayanan</a> 
               <br>
               <em>TPAMI/ICCP, 2020</em>
               <br>
@@ -191,7 +236,7 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="data/orbcam.mp4"><papertitle>Lensless Imaging with Spherical Sensors</papertitle></a>
               <br>
-              <strong>Yi Hua</strong>, <a href="https://yongyizhao.com">Yongyi Zhao</a>, <a href="http://imagesci.ece.cmu.edu">Aswin C. Sankaranarayanan</a>
+              <strong>Yi Hua</strong>, <a href="https://yongyizhao.com" style="color: black">Yongyi Zhao</a>, <a href="http://imagesci.ece.cmu.edu" style="color: black">Aswin C. Sankaranarayanan</a>
               <br>
               <p></p>
             </td>
@@ -296,7 +341,7 @@
                 <papertitle>Peel</papertitle>
               </a>
               <br>
-              in collaboration with Zhifan Li, Yoko Hongyu Li, <a href="https://ceciliavision.github.io">Cecilia Zhang</a>
+              in collaboration with Zhifan Li, Yoko Hongyu Li, <a href="https://ceciliavision.github.io" style="color: black">Cecilia Zhang</a>
               <br>
               Hack Rice, 2015 &nbsp <font color="red"><strong>People's Choice Award</strong></font>
               <br>
@@ -313,7 +358,7 @@
               <papertitle>We Put Food On Your Plate</papertitle>
               </a>
               <br>
-              in collaboration with <a href="https://ceciliavision.github.io">Cecilia Zhang</a>
+              in collaboration with <a href="https://ceciliavision.github.io" style="color: black">Cecilia Zhang</a>
               <br>
               <a href="https://www.youtube.com/watch?v=ZXKyUi7liN8">
                 video </a> /
@@ -339,7 +384,7 @@
               <img src="images/rickyi-1.GIF" width="160" height="160">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://hawaiii.github.io/animated_quarantine"><papertitle> Animated Illustrations of Quarantine At Home </papertitle></a>
+              <a href="/animated_quarantine/index.html"><papertitle> Animated Illustrations of Quarantine At Home </papertitle></a>
             </td>
           </tr> -->
 					
