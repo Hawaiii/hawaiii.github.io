@@ -1,0 +1,29 @@
+060422
+
+TODO
+[] add art
+	[x][x][x] animation
+	[x][x][x] pittsburgh
+	[x][x][x] watercolor
+[x] square FourierCam image
+[x] square SweepCam image
+[x] describe orbcam significance
+
+before launching
+-[] remove acoustoptics entry
+
+other things
+[] ask Aswin abt putting OrbCam on arxiv & video on youtube
+[] ask Aswin to link my website to lab
+[] redirect my cmu website to github
+
+
+
+052522
+
+TODO
+[x] add circle on profile pic
+[x] edit research summary
+[x] add review CVPR, ECCV, OE to CV
+[x] make sweepcam result gif
+[x] add sweepcam video link
