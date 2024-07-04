@@ -116,6 +116,41 @@
             </td>
           </tr>
 
+          <tr onmouseout="seamlessjoiner_stop()" onmouseover="seamlessjoiner_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='seamlessjoiner_image'>
+                <img src='images/seamlessjoiner_after.jpg' width="160"></div>
+              <img src='images/seamlessjoiner_before.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function seamlessjoiner_start() {
+                document.getElementById('seamlessjoiner_image').style.opacity = "1";
+              }
+
+              function seamlessjoiner_stop() {
+                document.getElementById('seamlessjoiner_image').style.opacity = "0";
+              }
+              seamlessjoiner_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/seamless_joiner_iccp_poster.pdf" type="pdf">
+              <papertitle>Seamless Joiners</papertitle>
+            </a>
+              <br>
+              <strong>Yi Hua</strong>
+              <br>
+              <em>ICCP poster, 2023</em>
+              <br> 
+              <a href="data/seamless_joiner_iccp_poster.pdf" type="pdf">poster</a>
+              <br>
+              <p> 
+                Natural looking multi-perspective photos from rendering NeRF with general linear cameras.
+              </p>
+            </td>
+          </tr>
+
 
           <tr onmouseout="zcam_stop()" onmouseover="zcam_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
