@@ -84,6 +84,44 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="worldtracing_stop()" onmouseover="worldtracing_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='worldtracing_image'>
+                <img src='images/worldtracing_after.gif' width="160"></div>
+              <img src='images/worldtracing_before.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function worldtracing_start() {
+                document.getElementById('worldtracing_image').style.opacity = "1";
+              }
+
+              function worldtracing_stop() {
+                document.getElementById('worldtracing_image').style.opacity = "0";
+              }
+              worldtracing_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://haoz19.github.io/world-tracing-page/">
+              <papertitle>World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible</papertitle>
+            </a>
+              <br>
+              <a href="https://haoz19.github.io/" style="color: black">Hao Zhang</a>, <a href="https://mbanani.github.io/" style="color: black">Mohamed El Banani</a>, <a href="https://jen-haocheng.com/#/" style="color: black">Jen-Hao Cheng</a>, <a href="https://people.csail.mit.edu/pzpzpzp1/" style="color: black">Paul Zhang</a>, <strong>Yi Hua</strong>, <a href="https://bmild.github.io/" style="color: black">Ben Mildenhall</a>, <a href="https://christophlassner.de" style="color: black">Christoph Lassner</a>, <a href="https://vision.ai.illinois.edu/narendra-ahuja/" style="color: black">Narendra Ahuja</a>, <a href="https://gengshan-y.github.io/" style="color: black">Gengshan Yang</a>
+              <br>
+              <em>NeurIPS, 2026</em> &nbsp <font color="red"><strong>(Spotlight)</strong></font>
+              <br>
+              <a href="https://haoz19.github.io/world-tracing-page/">project page</a> /
+              <a href="https://arxiv.org/abs/2606.13652">paper</a> /
+              <a href="https://github.com/haoz19/world-tracing">code</a> /
+              <a href="https://huggingface.co/spaces/haoz19/world-tracing-demo">demo</a>
+              <br>
+              <p>
+                Generating what's hidden makes the visible surface more accurate, not less: multilayer depth outperforms single-layer depth predictors on their own task.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="fnerf_stop()" onmouseover="fnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
