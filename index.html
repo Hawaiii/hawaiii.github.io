@@ -76,8 +76,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                During my Ph.D., I worked on camera designs that can significantly minimize their size and bulk -- cameras without lenses.
-                I developed both novel hardware and their reconstruction algorithms to enhance the speed and quality of 3D lensless imaging.
+                Since my Ph.D., I have been working in industry on 3D reconstruction and generation -- from high quality neural assets captured with real cameras,
+                to world models that generate, reconstruct, and simulate explorable 3D worlds.
               </p>
             </td>
           </tr>
@@ -118,6 +118,78 @@
               <br>
               <p>
                 Generating what's hidden makes the visible surface more accurate, not less: multilayer depth outperforms single-layer depth predictors on their own task.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="atlas_stop()" onmouseover="atlas_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='atlas_image'>
+                <img src='images/worldlabs/atlas_after.gif' width="160"></div>
+              <img src='images/worldlabs/atlas_before.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function atlas_start() {
+                document.getElementById('atlas_image').style.opacity = "1";
+              }
+
+              function atlas_stop() {
+                document.getElementById('atlas_image').style.opacity = "0";
+              }
+              atlas_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.worldlabs.ai/blog/atlas">
+              <papertitle>Atlas: A World Model for Spatial Intelligence</papertitle>
+            </a>
+              <br>
+              World Labs Team
+              <br>
+              <em>World Labs Blog, 2026</em>
+              <br>
+              <a href="https://www.worldlabs.ai/blog/atlas">blog</a>
+              <br>
+              <p>
+                An omni world model that natively handles text, images, video, and 3D, spanning generation, reconstruction, and simulation.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="marble_stop()" onmouseover="marble_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='marble_image'>
+                <img src='images/worldlabs/marble_after.gif' width="160"></div>
+              <img src='images/worldlabs/marble_before.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function marble_start() {
+                document.getElementById('marble_image').style.opacity = "1";
+              }
+
+              function marble_stop() {
+                document.getElementById('marble_image').style.opacity = "0";
+              }
+              marble_stop()
+            </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.worldlabs.ai/blog/marble-world-model">
+              <papertitle>Marble: A Multimodal World Model</papertitle>
+            </a>
+              <br>
+              World Labs Team
+              <br>
+              <em>World Labs Blog, 2025</em>
+              <br>
+              <a href="https://www.worldlabs.ai/blog/marble-world-model">Nov 2025 blog</a> /
+              <a href="https://www.worldlabs.ai/blog/bigger-better-worlds">Sept 2025 blog</a> /
+              <a href="https://www.worldlabs.ai/blog/generating-worlds">Dec 2024 blog</a>
+              <br>
+              <p>
+                A multimodal world model that turns text, images, video, or coarse 3D layouts into persistent, editable, and explorable 3D worlds.
               </p>
             </td>
           </tr>
@@ -193,6 +265,15 @@
             </td>
           </tr>
 
+
+          <tr>
+            <td colspan="2" style="padding:20px;width:100%;vertical-align:middle">
+              <p>
+                During my Ph.D., I worked on camera designs that can significantly minimize their size and bulk -- cameras without lenses.
+                I developed both novel hardware and their reconstruction algorithms to enhance the speed and quality of 3D lensless imaging.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="zcam_stop()" onmouseover="zcam_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
